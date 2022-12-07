@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(249, 220, 225);
+    width: 375px;
+    margin: auto;
+}
+
+.container {
+    background: white;
+    display: grid;
+    grid-template-areas: 'one' 'two';
+}
+
+.perfume {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.image-1 {
+    display: none;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.new {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    align-content: center;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    border: none;
+}
+
+.cart {
+    fill: white;
+    padding-right: 1rem;
+}
+
+@media(min-width:900px) {
+    .image-1 {
+        display: block;
+        height: 100%;
+    }
+    .image {
+        display: none;
+    }
+    .container {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .wrapper-2 {
+        margin: auto;
+        padding-left: 1rem;
+        width: 300px;
+    }
+    button {
+        padding: 1rem;
+    }
+}
